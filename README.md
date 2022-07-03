@@ -1,20 +1,13 @@
-Что­бы соз­дать бота, нам нуж­но дать ему наз­вание, адрес и получить токен — стро­ку, которая будет однознач­но иден­тифици­ровать нашего бота для сер­веров Telegram. Зай­дем в Telegram под сво­им акка­унтом и откро­ем «отца всех ботов», BotFather.
+***
+To create a bot, we need to give it a name, address and get a token - a string that will uniquely identify our bot for Telegram servers. Let's go to Telegram under our account and open the "father of all bots", BotFather.
 
-Жмем кноп­ку «Запус­тить» (или отпра­вим /start), в ответ BotFather приш­лет нам спи­сок дос­тупных команд:
+We press the "Run" button (or send / start), in response BotFather will send us a list of available commands:
 
-/newbot — соз­дать нового бота;
-/mybots — редак­тировать ваших ботов;
-/setname — сме­нить имя бота;
-/setdescription — изме­нить опи­сание бота;
-/setabouttext — изме­нить информа­цию о боте;
-/setuserpic — изме­нить фото ава­тар­ки бота;
-/setcommands — изме­нить спи­сок команд бота;
-/deletebot — уда­лить бота.
-От­пра­вим бате‑боту коман­ду /newbot, что­бы соз­дать нового бота. В ответ он поп­росит ввес­ти имя будуще­го бота, его мож­но писать на рус­ском. Пос­ле вво­да име­ни нуж­но будет отпра­вить адрес бота, при­чем он дол­жен закан­чивать­ся на сло­во bot. Нап­ример, xakepbot или xakep_bot. Если адрес будет уже кем‑то занят, BotFather нач­нет изви­нять­ся и про­сить при­думать что‑нибудь дру­гое.
+/newbot - create a new bot; /mybots - edit your bots; / setname - change the name of the bot; /setdescription - change the description of the bot; /setabouttext - change information about the bot; /setuserpic - change the bot's avatar photo; /setcommands - change the list of bot commands; /deletebot - delete the bot. Let's send the /newbot command to the bot bot to create a new bot. In response, he will ask you to enter the name of the future bot, you can write it in Russian. After entering the name, you will need to send the address of the bot, and it must end with the word bot. For example, xakepbot or xakep_bot. If the address is already taken by someone, BotFather will begin to apologize and ask you to come up with something else.
 
-Ког­да мы наконец най­дем сво­бод­ный и кра­сивый адрес для нашего бота, в ответ получим сооб­щение, в котором пос­ле фра­зы Use this token to access the HTTP API будет написа­на стро­ка из букв и цифр — это и есть необ­ходимый нам токен. Сох­раним ее где‑нибудь на сво­ем компь­юте­ре, что­бы потом исполь­зовать в скрип­те бота.
+When we finally find a free and beautiful address for our bot, we will receive a message in response, in which, after the phrase Use this token to access the HTTP API, a string of letters and numbers will be written - this is the token we need. Let's save it somewhere on our computer so that we can later use it in the bot script.
 
-Для вза­имо­дей­ствия с Telegram API есть нес­коль­ко готовых модулей. Самый прос­той из них — Telebot. Что­бы уста­новить его, набери
+There are several ready-made modules for interacting with the Telegram API. The simplest of them is Telebot. To install it, type
 
-pip install pytelegrambotapi
-В Linux, воз­можно, понадо­бит­ся написать pip3 вмес­то pip, что­бы ука­зать, что мы хотим работать с треть­ей вер­сией Python.
+pip install pytelegrambotapi On Linux, it may be necessary to write pip3 instead of pip to indicate that we want to work with the third version of Python.
+***
